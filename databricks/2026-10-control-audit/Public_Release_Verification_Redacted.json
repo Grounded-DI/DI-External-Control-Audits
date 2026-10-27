@@ -1,0 +1,132 @@
+{
+  "schema": "grounded-di-public-research-release-review-v1",
+  "date_utc": "2026-10-27",
+  "project": "Grounded DI LLC independent Databricks control research",
+  "release_status": "OWNER-CONTROLLED PUBLIC RELEASE CANDIDATE; technical editorial checks passed; independent legal/IP review not performed",
+  "original": {
+    "pages": 30,
+    "preserved_unchanged_reported": true
+  },
+  "public_candidate": {
+    "filename": "Grounded_DI_Databricks_Control_Audit_Record_Book_Public_Research_Edition_20261027.pdf",
+    "bytes": 1447404,
+    "sha256": "8cf8fd5e6727883dfbba225f6cb5b3e7ad413fde45421728d1a5e053b82cbca5",
+    "pages": 30,
+    "fixed_layout_page_size_points": [
+      612,
+      792
+    ]
+  },
+  "checks": {
+    "thirty_pages": true,
+    "original_13_registered_and_6_fail_4_groups_7_pass": true,
+    "original_and_candidate_13_case_equivalence": true,
+    "decimal_scientific_notation": true,
+    "manifest_mutability": true,
+    "retry_header_inflation": true,
+    "failed_first_retry_and_candidate_v2": true,
+    "cursor_corruption_caveat": true,
+    "boolean_and_port_unresolved": true,
+    "passing_token_persistence": true,
+    "native_claude_parser_not_executed": true,
+    "self_audit_manifest_error_retained": true,
+    "self_audit_cache_failure_retained": true,
+    "earlier_issue_860_credit": true,
+    "public_independence_disclaimer": true,
+    "appendix_private_redactions": true,
+    "no_private_manifest_source_paths": true,
+    "no_original_private_edition_label": true,
+    "no_original_archive_sha256_strings": true,
+    "source_pdf_preserved": true,
+    "not_a_public_replay_kit": true,
+    "no_form_widgets": true,
+    "no_annotations": true,
+    "all_extracted_words_within_page_bounds": true
+  },
+  "check_summary": {
+    "passed": 24,
+    "total": 24,
+    "failed": []
+  },
+  "text_bounds": {
+    "extracted_word_count": 9866,
+    "outside_page_words": []
+  },
+  "pdf_metadata_observed": {
+    "format": "PDF 1.7",
+    "title": "",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "",
+    "producer": "",
+    "creationDate": "",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  },
+  "embedded_items": [
+    {
+      "name": "Content Credentials",
+      "kind": "C2PA/JUMBF provenance manifest",
+      "bytes": 24296,
+      "contains_no_named_private_markers_tested": true,
+      "scanned_markers": {
+        "Weinstein": false,
+        "Grounded DI": false,
+        "Databricks": false,
+        "W/evidence/": false,
+        "Official_3_1_Harness": false
+      },
+      "credential_signature_validated": false
+    }
+  ],
+  "pdf_structure": {
+    "annotations": 0,
+    "form_widgets": 0,
+    "bookmarks": 59,
+    "xml_metadata_present": false,
+    "pdf_encrypted": false
+  },
+  "pdf_visual_review": {
+    "renderer": "PyMuPDF/pdfium as invoked by render_pdf.py",
+    "dpi": 125,
+    "rendered_pages": 30,
+    "note": "Reviewed all 30 thumbnails, plus targeted full-page layouts. The re-rendered 30 pages are not equivalent to a code/evidence rerun."
+  },
+  "external_source_check": {
+    "public_issue": "https://github.com/databricks/databricks-sql-python/issues/860",
+    "title": "Retry: sleep_for_retry uses max(wait, delay_max) - inflates small Retry-After to delay_max",
+    "reported_date": "2026-07-14",
+    "scope": "Independent check of prior report identity and date only; no Databricks code deployment or runtime testing"
+  },
+  "disclosure_decisions": {
+    "preserved": [
+      "13/6/4/7 test accounting and stable case groups",
+      "decimal inference",
+      "shared mutable manifest",
+      "retry 2s/30s discrepancy and failed first repair",
+      "Cursor damaged configuration",
+      "boolean and host uncertainty",
+      "passing development-token boundary",
+      "native Claude parser not executed",
+      "Grounded DI verifier and cache self-audit failures"
+    ],
+    "withheld": [
+      "full proprietary Grounded DI definitions and Gate contract",
+      "private archive ZIP filenames and their hash list",
+      "nested archive/member identifiers",
+      "exact private run scripts, receipts, schema JSON keys, and path references",
+      "complete audit ZIPs and candidate code"
+    ]
+  },
+  "limitations": [
+    "Only the controlling PDF supplied in this task was available as an independent input for public editing; original underlying source/evidence ZIPs were not re-executed during this task.",
+    "Historical tests reported in the source book remain reported historical results; this release does not confer third-party certification.",
+    "Content Credentials are automatically embedded in the exported PDF. This is provenance metadata, not an original audit ZIP, and its digital signature was not independently validated.",
+    "The content was screened for obvious IP disclosure and confidential implementation details, but patent, trade-secret, trademark and third-party rights clearance requires owner/legal review."
+  ],
+  "release_authorization": "No public upload, GitHub push, publication, email or delivery to Databricks was performed.",
+  "no_smoothing_disposition": "No Databricks issue group, failing assertion, passing control, negative finding, unresolved contract, original failed repair or Grounded DI self-audit failure was removed.",
+  "public_record_note": "Public-safe derivative of the supplied release-verification JSON; private editorial-record metadata, private original filename/hash, an internal scan-path marker, and internal montage paths omitted. All other observations are reported from the supplied record, not newly executed by this derivative."
+}

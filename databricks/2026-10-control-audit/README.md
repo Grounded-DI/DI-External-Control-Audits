@@ -1,0 +1,12 @@
+# Databricks control audit — public research edition
+
+Grounded DI LLC's October 27, 2026 public research edition examines selected pinned Databricks client-code paths and the audit harness's own behavior. It is independent research, not sponsored, endorsed or certified by Databricks.
+
+- [Public research book (PDF)](Databricks_Control_Audit_Public_Research_Edition.pdf) — original 30-page public-edition PDF; SHA-256 `8cf8fd5e6727883dfbba225f6cb5b3e7ad413fde45421728d1a5e053b82cbca5`.
+- [Machine-readable text companion](Databricks_Control_Audit_Public_Research_Edition.txt) — page-labeled text extracted from the PDF. No OCR; reading order, tables, line breaks and diagrams may differ. The PDF is authoritative for visual layout.
+- [Public release verification record](Public_Release_Verification_Redacted.json) — a labeled public-safe derivative of the supplied historical release record. Private editorial metadata, private original identification, and internal montage paths were omitted; the source record remains unchanged privately. Its checks describe that prior release review, not a new rerun of historical tests or independent certification.
+- [Checksums](SHA256SUMS.txt) — covers the three files above and this README; the checksum file excludes itself.
+
+The book reports 13 registered Databricks property/control tests: six failing assertions across four issue groups and seven passing controls on the original local code; the same 13 passed against separate candidate files. It also retains a failed first retry repair, passing and unresolved controls, a prior public retry report, and the audit harness's own observed failures and corrections. Source-specific details and limits appear in the book. This public edition reports historical results; the underlying complete audit packages, source-member evidence and replay inputs are not included, and the PDF is not a standalone public replay kit. No live Databricks service was tested by this edition, and results are not a production-wide finding. The native Claude parser was not executed.
+
+Every PDF page produced extractable text in this publication check (30/30 pages). The 30 pages were rendered and reviewed as thumbnails. Complete character-level or accessible reading-order accuracy was not established; interpretive diagrams and visual layout should be read in the PDF. The checksums establish byte identity, not authorship or correctness.
