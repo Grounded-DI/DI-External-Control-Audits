@@ -1,0 +1,62 @@
+{
+  "schema": "grounded-di-public-research-release-review-v1",
+  "date_utc": "2026-10-28",
+  "subject": "Salesforce Agent Fabric independent public research",
+  "artifact": {
+    "filename": "Salesforce_Agent_Fabric_Public_Research.pdf",
+    "sha256": "0e9cd208b187824e47aacd0616bcf781d5d93661afac1278c96baa7142c3674b",
+    "bytes": 533004,
+    "pages": 18
+  },
+  "source_artifacts": {
+    "supplied_pdf_sha256": "69db42fdc95f9ad952ebf938afd2f36850fa5234be798f8ddabf9ab7cac6e5f6",
+    "supplied_corrected_receipt_sha256": "5f05fccd89b698f8cca0d2ff2da676f0aca64167aee956d2bcc3df717fefbf65",
+    "originals_unchanged": true
+  },
+  "edition_changes": [
+    "Replaced page 18 conditional publication-status statement with independent public research wording.",
+    "Removed embedded Content Credentials attachment; signature had not been independently validated.",
+    "Set explicit document-info metadata."
+  ],
+  "checks_performed": {
+    "all_18_pages_text_extractable": true,
+    "pages_1_to_17_extracted_text_unchanged": true,
+    "page_18_render_visually_inspected": true,
+    "all_18_pages_rendered_and_montage_inspected": true,
+    "links_before_and_after": 47,
+    "external_links_before_and_after": 13,
+    "external_uri_targets_unchanged": true,
+    "bookmarks_before_and_after": 17,
+    "embedded_files": 0,
+    "pdf_javascript_reported_by_pdfinfo": false,
+    "targeted_text_scan_no_apparent_credentials_email_or_local_user_paths": true,
+    "selected_pinned_documentation_and_helper_sources_checked": true,
+    "external_source_links_checked": 13,
+    "note": "Ten GitHub source paths retrieved through GitHub connector; three vendor web pages opened through web search. Availability is not proof of substantive accuracy of all claims."
+  },
+  "receipt_reconciliation": {
+    "supplied_pdf_link_annotations": 47,
+    "historical_no_pdf_annotations_claim": "Inaccurate if link annotations are included.",
+    "supplied_pdf_document_info": "PyMuPDF and pdfinfo reported blank fields; pypdf surfaced original document-info values from the file.",
+    "supplied_attachment_sha256": "3912c6030d25e2112f39349af6f86e2981020a82cde8ab8817d272faf137f857",
+    "attachment_signature_verified": false
+  },
+  "historical_results": {
+    "prior_publication_review_python_source_checks": 12,
+    "prior_publication_review_go_helper_tests": 9,
+    "original_go_runner": "BLOCKED",
+    "prior_reported_source_blob_matches": "16/16; not rechecked as a complete set in this release",
+    "new_tests_run": false,
+    "hosted_service_tests": false
+  },
+  "rights_review": {
+    "description": "Targeted review found analysis and brief attributed references; no complete vendor source files or vendor images included. Selected pinned MuleSoft documentation and Terraform repositories carry Apache-2.0 license files. No independent legal opinion or blanket clearance is asserted."
+  },
+  "prior_github_rejection": "User reported a prior block; exact rejection text not available in the inspected repository issue and pull request results.",
+  "limitations": [
+    "Underlying original test archives and receipts were not supplied in this publication pair.",
+    "Historical test counts and archive checks are inherited reports, not newly executed.",
+    "No PDF signature or C2PA signature is asserted.",
+    "A targeted scan cannot establish absence of all sensitive information or clear every third-party right."
+  ]
+}
