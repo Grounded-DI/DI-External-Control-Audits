@@ -1,0 +1,20 @@
+{
+  "schema": "grounded-di-public-research-release-review-v1",
+  "date_utc": "2026-10-28",
+  "project": "Grounded DI LLC Microsoft control audit and harness hardening",
+  "pdf_sha256": "268d13a2497d48682aa96595afcdf58d00cf0a0a934f4d0b881074bfc12b3486",
+  "pdf_pages": 6,
+  "pages_with_extractable_text": 6,
+  "pdf_preserved_from_reviewed_public_edition": true,
+  "source_commit": "bb9fd0df2aed2969a403b6d083c34185cad0eb04",
+  "source_repository": "https://github.com/microsoft/agent-governance-toolkit",
+  "source_attribution_correction": "https://github.com/Grounded-DI/grounded-di-replay-certificate-registry/blob/main/benchmarks/2026-10-21-microsoft-di2-v031-fresh-rerun/Source_Attribution_Correction.md",
+  "historical_tests_rerun": false,
+  "separate_fresh_rerun_execution_receipts_located": false,
+  "release_scope": "Six-page public edition and its text companion. Earlier demonstrations and later fresh-rerun exhibit linked separately.",
+  "limitations": [
+    "Historical results are reported; this publication is not a fresh replay or independent certification.",
+    "The complete replay inputs are not included in this directory.",
+    "Text extraction may alter reading order and layout."
+  ]
+}

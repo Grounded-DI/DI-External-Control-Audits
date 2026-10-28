@@ -1,0 +1,302 @@
+# Machine-readable text companion
+
+Extracted with pdftotext -layout from the public edition PDF, SHA-256 268d13a2497d48682aa96595afcdf58d00cf0a0a934f4d0b881074bfc12b3486. No OCR; reading order, spacing and tables may differ. The PDF governs layout.
+
+## PDF page 1
+
+```text
+GROUNDED DI OS
+
+
+
+
+ CONTROL AUDIT
+ & HARNESS
+ HARDENING
+
+ A companion to Two deterministic-control demos
+ How a local counterexample repaired DI² v0.3.1, and what the
+ Microsoft mirror actually tested
+
+
+
+
+MSW / GROUNDED DI LLC     ·   OCTOBER 21, 2026
+
+PUBLIC RESEARCH EDITION        ·   COMPANION VOLUME
+```
+
+## PDF page 2
+
+```text
+GROUNDED DI OS / ENGINEERING RECORD
+
+
+
+
+ This second book records a bounded feedback loop: local counterexamples were used to
+ repair Grounded DI's own DI² harness, and the resulting v0.3.1 candidate was then
+ test-driven against an unchanged, pinned slice of Microsoft's Agent Governance Toolkit.
+ The work is authorized local software testing of public code. It does not describe a live
+ Microsoft service, a production incident, or a product ranking. Microsoft retains its own
+ source attribution; Grounded DI / MSW authorship and DIP106 lineage attach to
+ Grounded DI's materials, not to Microsoft code.
+
+
+ 1. The sequence matters
+
+
+   Step                  Executed record                             Consequence
+
+
+   Earlier Microsoft     The first book preserves screenshots        Historical screenshot records, not
+   demonstrations        reporting v3's 216 upstream passes, 11      executable inputs to this mirror. Keep
+                         skips, 16 targeted passing controls and     their counts separate.
+                         8 exceptions across five groups; later
+                         v4.3 captures report 14 failures across
+                         five groups.
+
+
+   DI² v0.3 hardening    A fresh local comparison found an           A minimal v0.3.1 runtime repair moved
+   review                expiry-check placement regression. The      the final finite-clock check after
+                         unchanged v0.3 replay could pass while      validation and consumption in memory
+                         targeted late-entry assertions failed.      and SQLite paths. No new architecture,
+                                                                     schema or tier.
+
+
+   v0.3.1 verification   Two rounds each passed 105 core and         Local candidate classification: synthetic
+                         135 unit registrations. The 32-case         hardening candidate with optional
+                         expiry comparison yielded 13 intended       persistent local gate. No production
+                         failures on v0.3 and 32 passes on v0.3.1.   claim.
+                         The six deliberately defective fixtures
+                         remain property failures.
+
+
+   New Microsoft         Commit bb9fd0df2aed2969a403b6d083c          A separate adapter and registry
+   mirror                34185cad0eb04 and 11 primary modules        exercised the unchanged harness
+                         (3,184 physical lines). Eight upstream      runner. No material v0.3.1 defect
+                         files: 216 passes, 11 OPA skips. Added      requiring repair was demonstrated.
+                         local registry: 25 Microsoft passes, 13
+                         failed safety assertions across five
+                         groups; all 13 reproduced in a fresh
+                         process.
+
+
+   DI² native            MEMORY_ONLY: 26 passes.                     Positive evidence for tested local
+   comparison            SQLITE_LOCAL: 27 passes. Twenty-two         properties only; unsupported paths are
+                         fixture intents were common, with           not counted as passes.
+                         declared representation and
+                         configuration differences.
+
+
+
+
+PUBLIC    · PINNED SOURCE · LOCAL EVIDENCE                                                                    02
+```
+
+## PDF page 3
+
+```text
+GROUNDED DI OS / ENGINEERING RECORD
+
+
+
+
+ The v0.3.1 repair preceded the final Microsoft mirror. This book does not claim that the
+ 13 mirror failures caused that repair. It shows two legitimate uses of the same audit
+ discipline: hardening one's own candidate against a reproduced regression, then testing
+ its evidence infrastructure and the target on separately labeled native paths.
+
+
+ 2. What repeated in the Microsoft path
+ These 13 cases are five issue groups, not 13 independent vulnerabilities:
+
+  01 Incomplete effective argument binding — four cases. The wrapper's context
+     projection records the first positional action and keyword arguments but does not bind
+     positional tails, variadic arguments or omitted callable defaults. Different actual
+     callable-entry values can share an action digest. Source: govern.py:892–963 at the pinned
+     commit.
+
+  02 Approved snapshot versus callable entry — three cases. A permitted approval or
+     advisory callback can change original nested arguments between review and
+     invocation. In the registered sync and async cases, review saw n=1; the callable entered
+     with n=999. Source: govern.py:414–603, 794–840, 892–963.
+
+  03 Expiry sampled before remaining work — three cases. Injected clocks and
+     disclosed scheduling/store instrumentation placed callable entry at offset 20 after a
+     deadline of 10. Exact-deadline submission correctly rejected in a control. This is a
+     final-sample placement finding, not proof of strict remote or wall-clock timing. Source:
+     approval_protocol/coordinator.py:311–365; govern.py:433–603.
+
+  04 Ordered stages — one case. Required stage 1 was accepted before stage 0; after
+     both identities participated the chain resolved allow and the local callable entered once.
+     This is an order violation, not evidence that one identity satisfied both stages. Source:
+     approval_protocol/coordinator.py:191–285; ADR-0030 section 4.
+
+  05 Conflicting submissions — two cases. Conflicting reuse of an event ID returned the
+     original allow without a content comparison; a fresh ID appended a conflicting
+     same-stage deny. The latter remained fail-closed. Neither case showed unauthorized
+     invocation. The same-ID payload rule is a stronger audit expectation; the ADR expressly
+     addresses same-stage conflict. Source: approval_protocol/coordinator.py:211–285.
+
+ Contrary controls passed: ordinary authorized calls, keyword-only and nested JSON
+ distinction, missing-stage and unpermitted-identity denial, policy/action/chain mismatch
+ rejection, exact duplicate delivery, advisory nonauthority, malformed-response denial,
+ competing consumption, and configured advisory behavior. This is why the issue groups
+ are stated narrowly.
+
+
+
+
+PUBLIC   · PINNED SOURCE · LOCAL EVIDENCE                                                        03
+```
+
+## PDF page 4
+
+```text
+GROUNDED DI OS / ENGINEERING RECORD
+
+
+
+
+ 3. How the harness was boosted
+ The v0.3.1 change repaired one reproduced local regression: expensive validation could
+ consume the authorization interval after an earlier clock sample. In the original
+ controlled memory comparison, unchanged v0.3 entered at 23.674 ms and 102.419 ms
+ with a 3 ms interval; v0.3.1 denied without invocation on the same inputs. A 32-case
+ targeted comparison, real-clock stress, crash/receipt checks, mutation checks, and
+ byte-repeatability checks supported the repair within the stated local contract.
+ runtime.py changed by 15 added and two removed lines including comments; durable.py
+
+ did not change.
+
+ The Microsoft mirror then tested the new harness as audit infrastructure. Its
+ shipped integrity and full replay passed. A separately written adapter ran through the
+ unchanged candidate unittest_runner.py and reporting.classify, while Microsoft and DI²
+ native results stayed separate. All 91 registered cases reconciled; the 13 Microsoft
+ safety failures were assertion failures rather than crashes, repeated in a fresh process
+ and checked by a second witness algorithm against callable-entry and event
+ observations. Five observation-fixture mutations exercised the new oracle; they were
+ not mutations of Microsoft's production code.
+
+ One early audit assertion about omitted versus explicit defaults was too strong and was
+ withdrawn; the corrected case observed mutable default value at actual entry. A
+ transport-added newline in 39 dependency copies was corrected to exact pinned Git
+ blobs, and the final upstream and native suites were rerun. These are audit-method
+ corrections, not harness repairs or Microsoft edits. The source, prior plan and raw results
+ remain retained.
+
+ The practical maintenance rule is to hold v0.3.1. A new counterexample warrants a
+ targeted regression case and the smallest justified correction, not an automatic
+ architecture upgrade. A local pass earns a bounded claim; it does not silently expand
+ supported surfaces.
+
+
+
+
+PUBLIC   · PINNED SOURCE · LOCAL EVIDENCE                                                   04
+```
+
+## PDF page 5
+
+```text
+GROUNDED DI OS / ENGINEERING RECORD
+
+
+
+
+ 4. Determinism and the actual claim
+ A stable digest can omit an argument. That is incomplete binding, not computational
+ nondeterminism. Deterministic policy evaluation, canonical byte repeatability, workflow
+ correctness, and enforcement through callable entry are distinct properties. The mirror's
+ DL labels apply the six definitions in the v0.3.1 package only to registered boundaries:
+ Microsoft local DL1 PARTIAL, DL2 FAIL, DL3 PARTIAL, DL4 UNTESTED, DL5 FAIL, DL6
+ FAIL; DI² local DL1 PARTIAL, DL2 PASS, DL3 PASS, DL4 UNTESTED, DL5 PASS, DL6 PASS.
+ Those cells are not whole-product or cross-model certifications. The first book's
+ historical screenshot DL assessment is a separate record with a different evidence base.
+
+ DI² general async execution, real identity authentication, complete
+ closure/global/environment binding, external exactly-once effects, strict hard-real-time
+ deadlines and production readiness remain unsupported or untested here. Microsoft's
+ durable-store recovery, real remote identity, live endpoints and external effects were
+ not tested. Eleven upstream OPA tests skipped because the CLI was unavailable. The
+ host's pydantic 2.14.0 was below the full dev-extra's declared 2.14.1 minimum. No
+ Microsoft-wide inference, incident frequency, patent infringement, commercial
+ superiority or real-world effect is established.
+
+
+ 5. Evidence ledger and replay
+
+
+   Record                        Exact identity / role
+
+
+   First book                    Screenshot-based historical companion; unchanged. The public text
+                                 record is available separately.
+
+
+
+
+   DI² harness archive           Original local v0.3.1 candidate, retained within the mirror evidence. Full
+                                 harness materials are not included in this edition.
+
+
+
+
+   DI² repair report             Historical repair report, raw evidence and remaining limits are retained in
+                                 the research record.
+
+
+
+
+   Microsoft mirror report       Historical mirror report retains the case matrix, source references,
+                                 observations and corrections.
+
+
+
+
+PUBLIC   · PINNED SOURCE · LOCAL EVIDENCE                                                                     05
+```
+
+## PDF page 6
+
+```text
+GROUNDED DI OS / ENGINEERING RECORD
+
+
+
+
+   Record                        Exact identity / role
+
+
+   Complete mirror evidence      The historical mirror archive contains the evidence required for a full local
+                                 replay. It is not included in this public edition.
+
+
+
+
+   Microsoft source              https://github.com/microsoft/agent-governance-toolkit at commit
+                                 bb9fd0df2aed2969a403b6d083c34185cad0eb04; retained 95 source files
+                                 verified against Git blob IDs. The MIT/copyright notices remain with those
+                                 files.
+
+
+
+ The full replay requires the separately retained mirror evidence and controlled local
+ inputs. The first book's nine image captures and the historical v4.3 executable inputs
+ are not included here; the v4.3 package was not replayed in the mirror. This book is an
+ editorial synthesis of the historical record, not a replacement for raw evidence.
+
+
+
+
+ Disposition: Retain v0.3.1 as the local hardening candidate and maintain the
+ issue-group report and regression matrix. Update the record for a changed pinned
+ commit, new root cause, tested repair or materially different boundary.
+
+
+
+
+PUBLIC   · PINNED SOURCE · LOCAL EVIDENCE                                                                    06
+```
+
