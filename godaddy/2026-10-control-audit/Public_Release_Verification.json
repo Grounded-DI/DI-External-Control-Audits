@@ -1,0 +1,48 @@
+{
+  "schema": "grounded-di-public-research-release-review-v1",
+  "date_utc": "2026-10-28",
+  "project": "Grounded DI LLC independent GoDaddy DNS control research",
+  "record_type": "current publication review; not a reproduction of a prior verification record",
+  "source_pdf": {
+    "pages": 23,
+    "sha256": "79580e0490c41b2195aa2852f2a9f4ffe7437d62ee3c22e4468a38d45e506843",
+    "preserved_unchanged": true
+  },
+  "checks": {
+    "pages_with_extractable_text": 23,
+    "embedded_files": 0,
+    "annotations": 0,
+    "forms": false,
+    "javascript": false,
+    "metadata_reviewed": true,
+    "text_reviewed_for_apparent_secrets_private_paths_and_customer_data": true,
+    "pinned_public_commit_and_four_source_paths_accessible": true,
+    "pinned_handler_reviewed_for_final_read": true
+  },
+  "source": {
+    "repository": "https://github.com/godaddy/cli",
+    "commit": "6aa64b60103d6c0807a3da9e4cde9380381e29a1",
+    "release": "0.2.31",
+    "reviewed_paths": [
+      "rust/src/dns/set/mod.rs",
+      "rust/src/dns/set/plan.rs",
+      "rust/src/dns/set/write.rs",
+      "rust/src/dns/set/outcome.rs"
+    ],
+    "source_observation": "Handler summarizes planned actions and offers a suggested list action; it does not perform a final exact-set read in the reviewed path."
+  },
+  "historical_evidence": {
+    "original_evidence_archives_available_for_this_review": false,
+    "original_release_verification_record_available_for_this_review": false,
+    "historical_tests_rerun": false,
+    "production_service_tested": false,
+    "note": "Evidence integrity checks, historical test counts and replay results in the book are reported from the book; they were not independently repeated in this review."
+  },
+  "release_status_note": "The PDF preserves its pre-publication owner-review and not-yet-published statements as historical editorial status. The owner subsequently requested this public release.",
+  "limitations": [
+    "Text extraction is not a full accessibility or reading-order validation.",
+    "The PDF is not a self-contained replay kit.",
+    "Review found no apparent credentials, private customer data, private runtime paths or embedded files; the scan is not proof of absence.",
+    "Source inspection does not independently reproduce fixture outcomes or establish production impact."
+  ]
+}
