@@ -1,0 +1,25 @@
+{
+  "schema": "grounded-di-public-release-verification-v1",
+  "date_utc": "2026-10-28",
+  "target_repository": "https://github.com/google/adk-python",
+  "target_commit": "4c66a009106cbb855a79f4dc7383712057212e1e",
+  "pdf_sha256": "72fea538277d25c0b1737970a0f5380b65894690086e5e36e82100700fa2d9de",
+  "pdf_pages": 3,
+  "text_sha256": "2b5f7f89e7da4721c5c8b5381c21fa8a9da5d7fb9635fe5117e366556813578c",
+  "verification": {
+    "local_runner_cases": 4,
+    "local_processor_cases": 8,
+    "upstream_tests_passed": 29,
+    "pdf_rendered_and_visually_reviewed": true,
+    "pdf_text_extracted": true,
+    "public_content_limited_to_synthetic_scope": true,
+    "private_harness_omitted": true
+  },
+  "limitations": [
+    "No hosted Google service, external transaction, deployed UI or malicious actor tested.",
+    "The evidence and probes are not included in this public package.",
+    "A checksum establishes byte identity, not correctness or authorship."
+  ],
+  "independent_validation": "not established",
+  "vendor_response": "not obtained"
+}
