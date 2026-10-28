@@ -8,3 +8,5 @@ Public engineering audits of AI control systems, including source analysis, repl
 - [Microsoft control audit and harness hardening — October 2026](microsoft/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification; related research records are linked separately.
 - [Salesforce Agent Fabric control audit — October 2026](salesforce/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification; historical local results and hosted-service limits are distinguished.
 - [Google ADK confirmation control audit — October 2026](google/2026-10-control-audit/README.md): public research book and release verification covering bounded local callback and confirmation tests.
+
+- [AWS AgentCore Gateway and Policy audit — October 2026](aws/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification covering documented policy boundaries, Cedar source analysis, and local synthetic controls.

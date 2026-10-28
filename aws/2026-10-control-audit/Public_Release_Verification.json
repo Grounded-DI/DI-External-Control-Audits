@@ -1,0 +1,54 @@
+{
+  "schema": "grounded-di-public-research-release-review-v1",
+  "date_utc": "2026-10-28",
+  "artifact": {
+    "filename": "AWS_AgentCore_Expanded_Public_Research.pdf",
+    "sha256": "062eb38c59996d8a29813bd3492b350b7576afbd10150fb5b09a600514be84ee",
+    "pages": 10
+  },
+  "input_sha256": {
+    "private_v2_pdf": "06cfc31244b2cd8ef84ed9c87ddafeabcfc2d3d2b901a3245e4c7764c496dc0a",
+    "private_v2_package": "021104500323890422b941dd120366308d60fdd8faf92f9e2831f640a729b939",
+    "previous_four_page_pdf": "e696d513a2e70cd1820c3cb29fed3a8d4aacfbfa4cdd8410a482a96d86ab1dbd"
+  },
+  "historical_results": "DI2 baseline and five synthetic results reproduced from private record; not rerun for this edition. Cedar runtime and hosted AWS were not executed.",
+  "limitations": [
+    "Retrieval-service pages may be cached and are not origin HTML archives.",
+    "Unsigned hashes establish byte identity, not correctness or authorship.",
+    "Private implementation materials and complete replay inputs are not included."
+  ],
+  "prior_edition_checks": {
+    "pages_rendered_and_montage_inspected": 10,
+    "pages_with_text": 10,
+    "pdf_attachments": 0,
+    "pdf_annotations": 0,
+    "source_links": "Six AWS documentation pages opened via retrieval service; Cedar authorizer, partial response and toolkit overview retrieved at pinned commits. Links in PDF are text URLs, not clickable PDF annotations.",
+    "text_scan_counts": {
+      "private_key": 0,
+      "token": 0,
+      "local_paths": 0,
+      "email": 0
+    },
+    "json_and_checksums": "validated at packaging"
+  },
+  "publication_review": {
+    "reviewed_at_utc": "2026-10-28T22:53:41.653014+00:00",
+    "pdf_sha256": "062eb38c59996d8a29813bd3492b350b7576afbd10150fb5b09a600514be84ee",
+    "public_package_sha256": "2fa7115a4479188289564f4e96cd19a89f1ea4cd595be191f467838d3fcf3d8e",
+    "pdf_matches_review_package": true,
+    "checks": [
+      "All ten page-labeled text extracts match pdftotext -layout output.",
+      "PDF metadata, page annotations, embedded attachments, root catalog and page image counts inspected; no attachments or annotations.",
+      "Public text and metadata reviewed for credentials, sensitive paths, personal information, third-party material and unsupported claims.",
+      "Six AWS documentation links retrieved via web service; Cedar source files and toolkit commit retrieved from GitHub. Results may be cached.",
+      "Recorded private v2 PDF, v2 archive and previous public PDF hashes matched the available local inputs.",
+      "JSON parsed; release file hashes and README relative links verified."
+    ],
+    "limitations": [
+      "No hosted AWS, Cedar runtime, or downstream-effect testing was performed.",
+      "Historical results were not rerun; the private record and harness are not published.",
+      "The PDF source URLs are readable text, not clickable PDF annotations.",
+      "No signature or authorship authentication was performed."
+    ]
+  }
+}
