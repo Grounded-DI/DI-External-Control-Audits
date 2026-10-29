@@ -10,3 +10,5 @@ Public engineering audits of AI control systems, including source analysis, repl
 - [Google ADK confirmation control audit — October 2026](google/2026-10-control-audit/README.md): public research book and release verification covering bounded local callback and confirmation tests.
 
 - [AWS AgentCore Gateway and Policy audit — October 2026](aws/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification covering documented policy boundaries, Cedar source analysis, and local synthetic controls.
+
+- [LangChain human approval control audit — October 2026](langchain/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification examining documented predicate stability and local controls.
