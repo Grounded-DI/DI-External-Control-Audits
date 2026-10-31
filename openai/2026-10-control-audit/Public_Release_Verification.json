@@ -1,0 +1,35 @@
+{
+  "status": "public_release",
+  "time_utc": "2026-10-31T18:32:54.697222+00:00",
+  "pdf_sha256": "33a61ecda67931cf14fd9cc124a60e333698b2dd97430356c5b2b29a75657a46",
+  "pages": 3,
+  "source_commit": "e355d69152d4f4730dfb03b63dbce53e8d9f5d8c",
+  "source_archive_sha256": "2b6f5972694c70e9097feb55306d0cf89834dd50e699accef7a9f64a1ef41f89",
+  "prior_v2_package_sha256": "44737a5e646be7336dd1b4cafc815e713ed6e4a647c3118c722aa23f6a9cba60",
+  "historical_results": "prior eleven upstream passes and DI\u00b2 baseline separate; v2 separate-run synthetic cases",
+  "current_results": "six registered shell cases and two separately registered ApplyPatchTool cases; recorder and import corrections retained privately; fresh-state case not handoff",
+  "checks_performed": "reviewed recorded outputs and pinned source; source links had been resolved in prior review; rendered and visually inspected each page; inspected PDF metadata, annotations and attachments; extracted text; validated JSON and checksums",
+  "links": [
+    "https://github.com/openai/openai-agents-python/blob/e355d69152d4f4730dfb03b63dbce53e8d9f5d8c/docs/human_in_the_loop.md",
+    "https://github.com/openai/openai-agents-python/blob/e355d69152d4f4730dfb03b63dbce53e8d9f5d8c/tests/test_function_tool_approval_arguments.py"
+  ],
+  "limitations": [
+    "test-injected exact rejection before emitted call is not an authenticated human decision",
+    "no hosted service, live model, or external effect",
+    "Python socket guard is not OS isolation",
+    "dependency distribution hashes unavailable"
+  ],
+  "release_review_utc": "2026-10-31T21:28:28.040918+00:00",
+  "release_review": {
+    "pdf_sha256_verified": "33a61ecda67931cf14fd9cc124a60e333698b2dd97430356c5b2b29a75657a46",
+    "review_package_pdf_byte_match": true,
+    "v3_private_manifest_verified": true,
+    "pinned_source_links_resolved": true,
+    "page_text_exact_extraction_match": true,
+    "pdf_metadata_annotations_and_attachments_inspected": true,
+    "public_files_reviewed": "credentials, personal information, private paths, third-party material, publication language and claims",
+    "new_test_execution": false,
+    "historical_results": "retained from prior v3 record; not rerun for release",
+    "prior_review_package_sha256": "f8b0aa0eb61983e2d427f033a6a6a9850b1a890550130dd7d51908b24fb77dc6"
+  }
+}

@@ -12,3 +12,5 @@ Public engineering audits of AI control systems, including source analysis, repl
 - [AWS AgentCore Gateway and Policy audit — October 2026](aws/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification covering documented policy boundaries, Cedar source analysis, and local synthetic controls.
 
 - [LangChain human approval control audit — October 2026](langchain/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification examining documented predicate stability and local controls.
+
+- [OpenAI Agents SDK approval audit — October 2026](openai/2026-10-control-audit/README.md): public research book, machine-readable text, and release verification examining documented approval scope and local synthetic handoff controls.
